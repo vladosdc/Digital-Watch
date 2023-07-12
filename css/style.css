@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+body{
+    font-family: 'Lexend', sans-serif;
+    overflow: hidden;
+    background: conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.digitalClock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+}
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+
+}
+#country{
+    text-align: center;
+}
+@media(max-width: 768px){
+    #bar1, #bar2 {
+        display: none;
+    }
+    .digitalClock{
+        text-align: center;
+        width: 100%;
+    }
+    .digitalClock h1{
+        display: block;
+    }
+}
+@media(max-width: 480px){
+    .digitalClock h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 183px){
+#day {
+    font-size: 2rem;
+}
+}
